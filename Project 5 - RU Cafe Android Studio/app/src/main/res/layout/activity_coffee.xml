@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CoffeeActivity">
+
+    <RadioGroup
+        android:id="@+id/coffeeSizeGroup"
+        android:layout_width="150dp"
+        android:layout_height="160dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="260dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/orderingCoffee">
+
+        <RadioButton
+            android:id="@+id/shortButton"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:onClick="onClickRadio"
+            android:text="@string/short_coffee" />
+
+        <RadioButton
+            android:id="@+id/tallButton"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:onClick="onClickRadio"
+            android:text="@string/tall_coffee" />
+
+        <RadioButton
+            android:id="@+id/grandeButton"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:onClick="onClickRadio"
+            android:text="@string/grande_coffee" />
+
+        <RadioButton
+            android:id="@+id/ventiButton"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:onClick="onClickRadio"
+            android:text="@string/venti_coffee" />
+
+    </RadioGroup>
+
+    <Spinner
+        android:id="@+id/quantity_spinner"
+        android:layout_width="100dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="200dp"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="260dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/orderingCoffee" />
+
+    <TextView
+        android:id="@+id/orderingCoffee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:gravity="center|center_vertical"
+        android:shadowColor="#E18410"
+        android:text="@string/ordering_coffee"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="191dp"
+        android:layout_height="177dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:contentDescription="@string/todo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/orderingCoffee"
+        app:srcCompat="@drawable/coffee" />
+
+    <CheckBox
+        android:id="@+id/cream"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="120dp"
+        android:text="@string/cream"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/orderingCoffee" />
+
+    <CheckBox
+        android:id="@+id/syrup"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="80dp"
+        android:text="@string/syrup"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/orderingCoffee" />
+
+    <CheckBox
+        android:id="@+id/caramel"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="160dp"
+        android:text="@string/caramel"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/orderingCoffee" />
+
+    <CheckBox
+        android:id="@+id/whippedCream"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="200dp"
+        android:text="@string/whipped_cream"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/orderingCoffee" />
+
+    <CheckBox
+        android:id="@+id/milk"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/milk"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/orderingCoffee" />
+
+    <Button
+        android:id="@+id/addCoffee"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/add_to_order_Coffee"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/coffeeSizeGroup" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="170dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="200dp"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="320dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/orderingCoffee">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/subtotalCoffee"
+            android:layout_width="170dp"
+            android:layout_height="55dp"
+            android:hint="@string/subtotal" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

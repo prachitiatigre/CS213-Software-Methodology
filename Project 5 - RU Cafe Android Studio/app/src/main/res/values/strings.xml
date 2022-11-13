@@ -1,0 +1,68 @@
+<resources>
+
+    //DONUT ACTIVITY
+    <string name="jelly_button">Jelly</string>
+    <string name="glazed_button">Glazed</string>
+    <string name="chocolate_button">Chocolate</string>
+    <string name="vanilla_button">Vanilla</string>
+    <string name="strawberry_button">Strawberry</string>
+    <string name="select_donut_flavor">Select Donut Flavor</string>
+
+    //YOUR ORDER ACTIVITY
+    <string name="empty"> </string>
+    <string name="your_order_sales_tax">Sales Tax</string>
+    <string name="your_order_payment">Payment</string>
+    <string name="place_order_button">Place Order</string>
+
+    //ADD DONUT TO ORDER ACTIVITY
+    <string name="add_to_order_button">Add to Order</string>
+    <string name="donut_quantity">Quantity = </string>
+
+
+    //STORE ORDERS ACTIVITY
+    <string name="store_orders_title">Store Orders</string>
+
+    //COFFEE ACTIVITY
+    <string name="short_coffee">Short</string>
+    <string name="tall_coffee">Tall</string>
+    <string name="grande_coffee">Grande</string>
+    <string name="venti_coffee">Venti</string>
+
+    <string name="app_name">Rutgers Cafe</string>
+    <string name="ru_cafe">Welcome to Rutgers Cafe</string>
+    <string name="your_order">Your Order</string>
+    <string name="order_donuts">Order Donuts</string>
+    <string name="store_order">Store Order</string>
+    <string name="order_coffee">Order Coffee</string>
+    <string name="title_activity_coffee">coffeeActivity</string>
+    <string name="whipped_cream">Whipped Cream</string>
+    <string name="ordering_coffee">Ordering Coffee</string>
+    <string name="syrup">Syrup</string>
+    <string name="caramel">Caramel</string>
+    <string name="cream">Cream</string>
+    <string name="milk">Milk</string>
+    <string name="todo">TODO</string>
+    <string name="subtotal">Subtotal</string>
+    <string name="add_to_order">Add to Order</string>
+    <string name="add_to_order_Coffee">Add to Order</string>
+    <string-array name="coffee_size">
+        <item>Short</item>
+        <item>Tall</item>
+        <item>Grande</item>
+        <item>Venti</item>
+    </string-array>
+    <string-array name="coffee_quantity">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+    <string-array name="donut_quantity">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+</resources>
