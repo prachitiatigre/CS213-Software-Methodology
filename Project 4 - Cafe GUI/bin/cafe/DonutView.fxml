@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cafe.DonutController">
+   <center>
+      <BorderPane prefHeight="400.0" prefWidth="400.0" BorderPane.alignment="CENTER">
+         <bottom>
+            <AnchorPane prefHeight="400.0" prefWidth="400.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Text fill="#8c2612" layoutX="24.0" layoutY="69.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ordering Donuts" wrappingWidth="178.67333984375">
+                     <font>
+                        <Font name="System Bold" size="19.0" />
+                     </font>
+                  </Text>
+                  <ComboBox fx:id="donutType" layoutX="19.0" layoutY="99.0" onAction="#setDonutType" prefWidth="150.0" />
+                  <ListView fx:id="selectDonutFlavor" layoutX="19.0" layoutY="146.0" prefHeight="183.0" prefWidth="139.0" />
+                  <ListView fx:id="finalDonut" layoutX="248.0" layoutY="148.0" prefHeight="180.0" prefWidth="139.0" />
+                  <ComboBox fx:id="donutsQuantity" layoutX="171.0" layoutY="166.0" prefHeight="26.0" prefWidth="65.0" />
+                  <Button fx:id="removeDonuts" layoutX="186.0" layoutY="258.0" mnemonicParsing="false" onAction="#removeDonuts" text="&lt;&lt;" />
+                  <Button fx:id="addDonuts" layoutX="186.0" layoutY="212.0" mnemonicParsing="false" onAction="#addDonuts" text="&gt;&gt;" />
+                  <Text layoutX="50.0" layoutY="368.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Subtotal">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Text>
+                  <Button layoutX="267.0" layoutY="345.0" mnemonicParsing="false" onAction="#addDonutToOrder" prefHeight="31.0" prefWidth="110.0" text="Add to Order" textFill="#360b0b">
+                     <font>
+                        <Font name="System Bold Italic" size="15.0" />
+                     </font>
+                  </Button>
+                  <ImageView fitHeight="105.0" fitWidth="144.0" layoutX="236.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../Images/Donuts.jpg" />
+                     </image>
+                  </ImageView>
+                  <TextArea fx:id="subTotalDonuts" layoutX="113.0" layoutY="340.0" prefHeight="42.0" prefWidth="113.0" />
+               </children>
+            </AnchorPane>
+         </bottom></BorderPane>
+   </center>
+</BorderPane>
